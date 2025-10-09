@@ -2,7 +2,9 @@
   <img src="https://your-banner-image-url.com/banner.png" alt="Banner">
 </p>
 
-<h1 align="center">Hi there, I'm Pustok Kit 👋</h1>
+<p align="center">
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Nahid;I'm+a+passionate+front-end+developer;I'm+always+learning+new+technologies;Welcome+to+my+profile!" alt="Typing SVG" /></a>
+</p>
 
 <p align="center">
   <em>A passionate developer from Bangladesh, interested in creating beautiful and engaging user experiences. I'm always learning and exploring new technologies.</em>
