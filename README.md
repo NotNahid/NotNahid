@@ -84,6 +84,9 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <p align="center">
   <img src="https://metrics.lecoq.io/NotNahid?template=classic&base.indepth=true&base.hireable=false&base.skip=false&languages.limit=8&languages.threshold=0%&languages.other=true&languages.colors=github&languages.sections=most-used&languages.indepth=true&languages.analysis.timeout=15&languages.analysis.timeout.repositories=7.5&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14" alt="GitHub Metrics" />
 </p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NotNahid&theme=github-compact" alt="Activity Graph">
+</p>
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=NotNahid&theme=radical&column=7" alt="GitHub Trophies" />
@@ -108,3 +111,14 @@ I'm a self-taught developer with a passion for front-end development and creatin
 ### 💡 AI-Generated Project Idea
 <!-- PROJECT-IDEA-START -->
 <!-- PROJECT-IDEA-END -->
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NotNahid/NotNahid/output/dist/github-snake-dark.svg">
+    <img alt="github-snake" src="https://raw.githubusercontent.com/NotNahid/NotNahid/output/dist/github-snake.svg">
+  </picture>
+</p>
+
+<p align="center">
+  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph">
+</p>
