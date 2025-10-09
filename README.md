@@ -85,8 +85,8 @@ I'm a self-taught developer with a passion for front-end development and creatin
 </p>
 
 ### 📚 Currently Reading
-<!-- GOODREADS-CURRENTLY-READING:START -->
-<!-- GOODREADS-CURRENTLY-READING:END -->
+<!-- GOODREADS-LIST:START -->
+<!-- GOODREADS-LIST:END -->
 
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
