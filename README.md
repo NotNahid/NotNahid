@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="https://your-banner-image-url.com/banner.png" alt="Banner">
+  <a href="https://github.com/Akshay090/svg-banners">
+    <img src="https://svg-banners.vercel.app/api?type=rainbow&text1=Nahid&text2=Web%20Developer&width=800&height=400" alt="Banner">
+  </a>
 </p>
 
 <p align="center">
@@ -18,20 +20,17 @@
   <a href="https://www.pinterest.com/not_nahid/" target="_blank"><img src="https://img.shields.io/badge/Pinterest-E60023?style=for-the-badge&logo=pinterest&logoColor=white" alt="Pinterest"></a>
   <a href="https://www.goodreads.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Goodreads-33332D?style=for-the-badge&logo=goodreads&logoColor=white" alt="Goodreads"></a>
 </p>
-
----
-
-## 🚀 About Me
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
 I'm a self-taught developer with a passion for front-end development and creating intuitive, user-friendly interfaces. I'm currently diving deeper into the React ecosystem and exploring the world of full-stack development. My goal is to leverage my skills to build meaningful and impactful web applications.
 
 - 🌐 Visit my website: [nahid.rf.gd](http://nahid.rf.gd/)
 - 📫 How to reach me: [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com)
-- ⏰ My Timezone: `(GMT-12:00) International Date Line West`
+- ⏰ My Timezone: `(GMT+6:00) Bangladesh Standard Time`
 
----
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
-## 🛠️ My Skills
+## 🛠️ 𝙼𝚢 𝚂𝚔𝚒𝚕𝚕𝚜
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -39,9 +38,9 @@ I'm a self-taught developer with a passion for front-end development and creatin
   </a>
 </p>
 
----
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
-## 📂 My Projects
+## 📂 𝙼𝚢 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜
 
 <p align="center">
   <a href="https://github.com/NotNahid/vintage-book-app">
@@ -49,9 +48,9 @@ I'm a self-taught developer with a passion for front-end development and creatin
   </a>
 </p>
 
----
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
-## 📊 My GitHub Stats & Trophies
+## 📊 𝙼𝚢 𝙶𝚒𝚝𝙷𝚞𝚋 𝚂𝚝𝚊𝚝𝚜 & 𝚃𝚛𝚘𝚙𝚑𝚒𝚎𝚜
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=NotNahid&show_icons=true&theme=radical" alt="NotNahid's GitHub Stats" />
