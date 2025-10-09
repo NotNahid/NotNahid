@@ -91,22 +91,11 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
 ## 🎢 𝙵𝚞𝚗 & 𝙸𝚗𝚝𝚎𝚛𝚊𝚌𝚝𝚒𝚟𝚎
-### 💬 Ask Me Anything
-<details>
-  <summary>Ask a question and get an AI-powered answer!</summary>
-  <form action="https://my-ama-function-qbb7r1txd-not-nahids-projects.vercel.app/api" method="post">
-    <input type="text" name="question" placeholder="Ask me anything..." required>
-    <input type="submit" value="Ask">
-  </form>
-</details>
 
-### 🤖 AI Coding Haiku of the Day
-<!-- HAIKU-START -->
-<!-- HAIKU-END -->
 
-### 💡 AI-Generated Project Idea
-<!-- PROJECT-IDEA-START -->
-<!-- PROJECT-IDEA-END -->
+
+
+
 
 ### 🤓 Daily Random Fact
 <!-- DAILY-FACT-START -->
@@ -115,9 +104,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <p align="center">
   <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card"/>
 </p>
-<p align="center">
-  <img src="https://github-readme-quotes.vercel.app/api" alt="Dev Quote" />
-</p>
+
 
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
