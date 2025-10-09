@@ -85,18 +85,10 @@ I'm a self-taught developer with a passion for front-end development and creatin
 </p>
 
 ### 📚 Currently Reading
+<table>
 <!-- GOODREADS-LIST:START -->
-- [বেগম মেরী বিশ্বাস (অখন্ড)](https://www.goodreads.com/review/show/7750263565?utm_medium=api&utm_source=rss) by বিমল মিত্র | Bimal Mitra (⭐️4.03)
-- [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.9)
-- [ঘরে বাইরে](https://www.goodreads.com/review/show/7592712552?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.91)
-- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773?utm_medium=api&utm_source=rss) by Bibhutibhushan Bandyopadhyay (⭐️4.23)
-- [The Plague](https://www.goodreads.com/review/show/7522680402?utm_medium=api&utm_source=rss) by Albert Camus (⭐️4.05)
-- [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
-- [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.81)
-- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
-- [Swann’s Way (In Search of Lost Time, #1)](https://www.goodreads.com/review/show/7430875241?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.12)
-- [Rain in the Mountains: Notes from the Himalayas](https://www.goodreads.com/review/show/7397062016?utm_medium=api&utm_source=rss) by Ruskin Bond (⭐️4.29)
 <!-- GOODREADS-LIST:END -->
+</table>
 
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
 
