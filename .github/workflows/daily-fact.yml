@@ -1,0 +1,28 @@
+name: Generate Daily Fact
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch:
+jobs:
+  generate-fact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install google-generativeai
+      - name: Generate Fact
+        run: python ./scripts/daily_fact.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest daily fact: ${timestamp}" || exit 0
+          git push
