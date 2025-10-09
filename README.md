@@ -122,3 +122,11 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <p align="center">
   <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph">
 </p>
+
+<p align="center">
+  <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card"/>
+</p>
+
+### 🤓 Daily Random Fact
+<!-- DAILY-FACT-START -->
+<!-- DAILY-FACT-END -->
