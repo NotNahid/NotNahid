@@ -2,15 +2,19 @@
   <img src="https://your-banner-image-url.com/banner.png" alt="Banner">
 </p>
 
-<h1 align="center">Hi there, I'm NotNahid 👋</h1>
+<h1 align="center">Hi there, I'm Pustok Kit 👋</h1>
 
 <p align="center">
-  <em>A passionate developer from [Your Location], interested in creating beautiful and engaging user experiences. I'm always learning and exploring new technologies.</em>
+  <em>A passionate developer from Bangladesh, interested in creating beautiful and engaging user experiences. I'm always learning and exploring new technologies.</em>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/your-username" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://twitter.com/your-twitter-handle" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
+  <a href="https://www.facebook.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+  <a href="https://x.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
+  <a href="https://www.instagram.com/notnahid.me/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+  <a href="https://www.threads.com/@pustokkit" target="_blank"><img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=threads&logoColor=white" alt="Threads"></a>
+  <a href="https://www.pinterest.com/not_nahid/" target="_blank"><img src="https://img.shields.io/badge/Pinterest-E60023?style=for-the-badge&logo=pinterest&logoColor=white" alt="Pinterest"></a>
+  <a href="https://www.goodreads.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Goodreads-33332D?style=for-the-badge&logo=goodreads&logoColor=white" alt="Goodreads"></a>
 </p>
 
 ---
@@ -18,6 +22,10 @@
 ## 🚀 About Me
 
 I'm a self-taught developer with a passion for front-end development and creating intuitive, user-friendly interfaces. I'm currently diving deeper into the React ecosystem and exploring the world of full-stack development. My goal is to leverage my skills to build meaningful and impactful web applications.
+
+- 🌐 Visit my website: [nahid.rf.gd](http://nahid.rf.gd/)
+- 📫 How to reach me: [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com)
+- ⏰ My Timezone: `(GMT-12:00) International Date Line West`
 
 ---
 
