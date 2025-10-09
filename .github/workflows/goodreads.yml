@@ -1,0 +1,14 @@
+name: Update Goodreads
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch:
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: zwacky/goodreads-profile-workflow@v1
+        with:
+          goodreads_user_id: '177645556'
+          shelf: 'currently-reading'
