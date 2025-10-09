@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: zwacky/goodreads-profile-workflow@v1
+      - uses: zwacky/goodreads-profile-workflow@main
         with:
           goodreads_user_id: '177645556'
           shelf: 'currently-reading'
