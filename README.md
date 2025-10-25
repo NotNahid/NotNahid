@@ -94,7 +94,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 - [The Plague](https://www.goodreads.com/review/show/7522680402?utm_medium=api&utm_source=rss) by Albert Camus (⭐️4.05)
 - [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
 - [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.81)
-- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
+- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.34)
 - [Swann’s Way (In Search of Lost Time, #1)](https://www.goodreads.com/review/show/7430875241?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.12)
 - [Rain in the Mountains: Notes from the Himalayas](https://www.goodreads.com/review/show/7397062016?utm_medium=api&utm_source=rss) by Ruskin Bond (⭐️4.29)
 <!-- GOODREADS-LIST:END -->
