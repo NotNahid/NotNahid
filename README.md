@@ -87,6 +87,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 ### 📚 Currently Reading
 <table>
 <!-- GOODREADS-LIST:START -->
+- [It Ends with Us (It Ends with Us, #1)](https://www.goodreads.com/review/show/8002196626?utm_medium=api&utm_source=rss) by Colleen Hoover (⭐️3.8)
 - [বেগম মেরী বিশ্বাস (অখন্ড)](https://www.goodreads.com/review/show/7750263565?utm_medium=api&utm_source=rss) by বিমল মিত্র | Bimal Mitra (⭐️4.03)
 - [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.9)
 - [ঘরে বাইরে](https://www.goodreads.com/review/show/7592712552?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.91)
@@ -96,7 +97,6 @@ I'm a self-taught developer with a passion for front-end development and creatin
 - [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.81)
 - [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
 - [Swann’s Way (In Search of Lost Time, #1)](https://www.goodreads.com/review/show/7430875241?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.12)
-- [Rain in the Mountains: Notes from the Himalayas](https://www.goodreads.com/review/show/7397062016?utm_medium=api&utm_source=rss) by Ruskin Bond (⭐️4.29)
 <!-- GOODREADS-LIST:END -->
 </table>
 
