@@ -87,7 +87,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 ### 📚 Currently Reading
 <table>
 <!-- GOODREADS-LIST:START -->
-- [It Ends with Us (It Ends with Us, #1)](https://www.goodreads.com/review/show/8002196626?utm_medium=api&utm_source=rss) by Colleen Hoover (⭐️3.8)
+- [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142?utm_medium=api&utm_source=rss) by Yolanda Olson (⭐️2.78)
 - [বেগম মেরী বিশ্বাস (অখন্ড)](https://www.goodreads.com/review/show/7750263565?utm_medium=api&utm_source=rss) by বিমল মিত্র | Bimal Mitra (⭐️4.04)
 - [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.9)
 - [ঘরে বাইরে](https://www.goodreads.com/review/show/7592712552?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.91)
