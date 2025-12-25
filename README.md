@@ -124,3 +124,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
   <img src="https://vbr.nathanchung.dev/badge?page_id=NotNahid.PROFILE_README.md" alt="visitors">
 </p>
 <!-- Thanks for checking out my code! Hope you have a great day. -->
+### 📜 Daily Inspiration
+<p align="center">
+  <img src="https://github-readme-quotes-bay.vercel.app/quote?theme=radical&animation=grow_out_in" alt="Random Quote" />
+</p>
