@@ -128,3 +128,12 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <p align="center">
   <img src="https://github-readme-quotes-bay.vercel.app/quote?theme=radical&animation=grow_out_in" alt="Random Quote" />
 </p>
+
+
+- name: Generate the user stats image
+        uses: cicirello/user-statistician@v1
+        with:
+          colors: dark
+          include-title: false
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
