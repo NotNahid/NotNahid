@@ -91,7 +91,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 - [বেগম মেরী বিশ্বাস (অখন্ড)](https://www.goodreads.com/review/show/7750263565?utm_medium=api&utm_source=rss) by বিমল মিত্র | Bimal Mitra (⭐️4.04)
 - [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.91)
 - [ঘরে বাইরে](https://www.goodreads.com/review/show/7592712552?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.89)
-- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773?utm_medium=api&utm_source=rss) by Bibhutibhushan Bandyopadhyay (⭐️4.21)
+- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773?utm_medium=api&utm_source=rss) by Bibhutibhushan Bandyopadhyay (⭐️4.22)
 - [The Plague](https://www.goodreads.com/review/show/7522680402?utm_medium=api&utm_source=rss) by Albert Camus (⭐️4.05)
 - [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
 - [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.81)
