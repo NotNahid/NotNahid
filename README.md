@@ -88,7 +88,6 @@ I'm a self-taught developer with a passion for front-end development and creatin
 <table>
 <!-- GOODREADS-LIST:START -->
 - [কোলকাতা কেন্দ্রিক বুদ্ধিজীবী](https://www.goodreads.com/review/show/8395778347?utm_medium=api&utm_source=rss) by M.R. Akhtar Mukul (⭐️4)
-- [To Kill a Mockingbird](https://www.goodreads.com/review/show/8395777880?utm_medium=api&utm_source=rss) by Harper Lee (⭐️4.22)
 - [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142?utm_medium=api&utm_source=rss) by Yolanda Olson (⭐️2.78)
 - [বেগম মেরী বিশ্বাস (অখন্ড)](https://www.goodreads.com/review/show/7750263565?utm_medium=api&utm_source=rss) by বিমল মিত্র | Bimal Mitra (⭐️4.04)
 - [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.9)
@@ -97,6 +96,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 - [The Plague](https://www.goodreads.com/review/show/7522680402?utm_medium=api&utm_source=rss) by Albert Camus (⭐️4.05)
 - [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
 - [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.81)
+- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
 <!-- GOODREADS-LIST:END -->
 </table>
 
