@@ -87,6 +87,7 @@ I'm a self-taught developer with a passion for front-end development and creatin
 ### 📚 Currently Reading
 <table>
 <!-- GOODREADS-LIST:START -->
+- [Bartleby the Scrivener](https://www.goodreads.com/review/show/8549810583?utm_medium=api&utm_source=rss) by Herman Melville (⭐️3.91)
 - [বলাকা](https://www.goodreads.com/review/show/8535859623?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.8)
 - [কোলকাতা কেন্দ্রিক বুদ্ধিজীবী](https://www.goodreads.com/review/show/8395778347?utm_medium=api&utm_source=rss) by M.R. Akhtar Mukul (⭐️4)
 - [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142?utm_medium=api&utm_source=rss) by Yolanda Olson (⭐️2.78)
@@ -96,7 +97,6 @@ I'm a self-taught developer with a passion for front-end development and creatin
 - [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
 - [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.8)
 - [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
-- [Swann’s Way (In Search of Lost Time, #1)](https://www.goodreads.com/review/show/7430875241?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.12)
 <!-- GOODREADS-LIST:END -->
 </table>
 
