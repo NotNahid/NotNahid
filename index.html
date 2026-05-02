@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Nahid - High-End Editorial</title>
+    
+    <!-- Premium Editorial Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Space+Grotesk:wght@500;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #beb5ff; 
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body, html {
+            width: 100%; height: 100vh;
+            color: #1a1a1a;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden;
+            background-color: var(--bg-color);
+            transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+            cursor: crosshair;
+        }
+
+        header, footer {
+            position: fixed; width: 100%; padding: 1.5rem 2rem;
+            display: flex; justify-content: space-between;
+            font-size: 0.85rem; font-weight: 500; z-index: 20; pointer-events: none;
+        }
+        header { top: 0; align-items: flex-start; }
+        footer { bottom: 0; align-items: flex-end; }
+        .logo { border: 1.5px solid #1a1a1a; border-radius: 50px; padding: 0.4rem 1.2rem; font-weight: 800; font-family: 'Syne', sans-serif;}
+        .meta-right, .location { text-align: right; font-size: 0.7rem; text-transform: uppercase; line-height: 1.4; letter-spacing: 0.05em; }
+
+        .hero-text-container {
+            width: 100%; height: 100%;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            z-index: 2; position: relative;
+        }
+
+        .text-row {
+            display: flex; align-items: baseline; /* Locks the text to a perfect designer baseline */
+            justify-content: center;
+            font-size: 14vw; 
+            line-height: 0.85; 
+            letter-spacing: -0.02em;
+        }
+
+        /* STRICT GRID: This prevents the word from shifting widths/heights */
+        .letter-container {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 0.8em; height: 1em; /* Fixed designer grid */
+            margin: 0 0.02em;
+        }
+
+        .letter-wrapper { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+        
+        /* Subtle, premium physics */
+        .living-char { display: inline-block; will-change: transform; width: 100%; text-align: center; }
+        .anim-hover { animation: hoverAnim 3s ease-in-out infinite alternate; }
+        .anim-pulse { animation: pulseAnim 4s ease-in-out infinite alternate; }
+        .anim-tilt { animation: tiltAnim 5s ease-in-out infinite alternate; }
+
+        @keyframes hoverAnim { 0% { transform: translateY(2%); } 100% { transform: translateY(-2%); } }
+        @keyframes pulseAnim { 0% { transform: scale(0.97); } 100% { transform: scale(1.03); } }
+        @keyframes tiltAnim { 0% { transform: rotate(-2deg); } 100% { transform: rotate(2deg); } }
+
+        /* --- THE DESIGNER TYPOGRAPHY ENGINE --- */
+        /* No more stretching. Pure font weights and styling. */
+        .font-brutal { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; }
+        .font-elegant { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; text-transform: lowercase; letter-spacing: -0.05em; }
+        .font-tech { font-family: 'Space Grotesk', sans-serif; font-weight: 500; text-transform: uppercase; }
+        .font-outline { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; color: transparent; -webkit-text-stroke: 3px #1a1a1a; }
+        .font-light { font-family: 'Syne', sans-serif; font-weight: 400; text-transform: uppercase; }
+
+        /* Perfected SVG Geometry */
+        .custom-svg { width: 0.8em; height: 0.8em; display: flex; align-items: center; justify-content: center; }
+        .custom-svg svg { width: 100%; height: 100%; overflow: visible; }
+        .bg-fill { fill: var(--bg-color); transition: fill 0.8s ease; }
+        .bg-stroke { stroke: var(--bg-color); transition: stroke 0.8s ease; }
+
+        .trail-item {
+            position: fixed; pointer-events: none; z-index: 10;
+            font-size: clamp(80px, 10vw, 150px); filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.4));
+            will-change: transform, opacity;
+            animation: stampInAndOut 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl));
+        }
+
+        @keyframes stampInAndOut {
+            0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--rot)) scale(0); }
+            15% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl)); }
+            70% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl)); }
+            100% { opacity: 0; transform: translate(-50%, calc(-50% + 50px)) rotate(var(--rot)) scale(calc(var(--scl) * 0.8)); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">HAUS</div>
+        <div class="meta-right">MAKER OF THINGS<br>WORLDWIDE</div>
+    </header>
+
+    <div class="hero-text-container" id="text-board">
+        <div class="text-row">
+            <div class="letter-container"><span class="letter-wrapper" id="char-0"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-1"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-2"></span></div>
+        </div>
+        <div class="text-row" style="margin-top: -0.1em;">
+            <div class="letter-container"><span class="letter-wrapper" id="char-3"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-4"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-5"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-6"></span></div>
+            <div class="letter-container"><span class="letter-wrapper" id="char-7"></span></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">@MADEINHAUS</div>
+        <div class="location">LOS ANGELES<br>CA 22:14:54</div>
+    </footer>
+
+    <script>
+        // --- HIGH-END BAUHAUS GEOMETRY SVGS ---
+        const SVGS = {
+            // Orbiting minimal O
+            bauhausO: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#1a1a1a" stroke-width="10"/>
+                <circle cx="50" cy="50" r="12" fill="#1a1a1a">
+                    <animateTransform attributeName="transform" type="rotate" values="0 50 50; 360 50 50" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="cy" values="15; 85; 15" dur="4s" repeatCount="indefinite"/>
+                </circle>
+            </svg></span>`,
+            
+            // Sharp vector N
+            sharpN: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <polygon points="10,100 10,0 35,0 90,75 90,0 100,0 100,100 75,100 20,25 20,100" fill="#1a1a1a"/>
+            </svg></span>`,
+
+            // Geometric Target A
+            targetA: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <polygon points="50,0 0,100 25,100 50,45 75,100 100,100" fill="#1a1a1a"/>
+                <circle cx="50" cy="75" r="12" fill="#1a1a1a">
+                    <animate attributeName="r" values="6;16;6" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            </svg></span>`,
+
+            // Elegant split D
+            splitD: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <path d="M10,0 L40,0 A50,50 0 0,1 40,100 L10,100 Z" fill="#1a1a1a"/>
+                <path d="M45,10 A40,40 0 0,1 45,90" fill="none" stroke="#1a1a1a" stroke-width="6" class="bg-stroke">
+                    <animate attributeName="stroke-width" values="2;10;2" dur="3s" repeatCount="indefinite"/>
+                </path>
+            </svg></span>`,
+
+            // Fluid Wave T
+            waveT: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <rect x="0" y="0" width="100" height="20" fill="#1a1a1a"/>
+                <path d="M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z" fill="#1a1a1a">
+                    <animate attributeName="d" values="M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z; M40,20 Q20,60 40,100 L60,100 Q40,60 60,20 Z; M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z" dur="3s" repeatCount="indefinite"/>
+                </path>
+            </svg></span>`,
+
+            // Constructivist Pillar I
+            pillarI: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <rect x="35" y="0" width="30" height="100" fill="#1a1a1a"/>
+                <rect x="25" y="25" width="50" height="8" class="bg-fill"/>
+                <rect x="25" y="65" width="50" height="8" class="bg-fill"/>
+            </svg></span>`,
+
+            // Checkerboard H
+            checkerH: `<span class="custom-svg"><svg viewBox="0 0 100 100">
+                <rect x="10" y="0" width="30" height="100" fill="#1a1a1a"/>
+                <rect x="60" y="0" width="30" height="100" fill="#1a1a1a"/>
+                <rect x="40" y="40" width="20" height="20" fill="#1a1a1a">
+                    <animateTransform attributeName="transform" type="rotate" values="0 50 50; 90 50 50" dur="1s" repeatCount="indefinite"/>
+                </rect>
+            </svg></span>`
+        };
+
+        // --- HIGH-END CURATED TYPOGRAPHY PHASES ---
+        const phases = [
+            { bg: '#beb5ff', chars: [`<span class="font-elegant">n</span>`, SVGS.bauhausO, `<span class="font-outline">T</span>`, SVGS.sharpN, `<span class="font-brutal">A</span>`, `<span class="font-elegant">h</span>`, SVGS.pillarI, `<span class="font-tech">D</span>`] }, 
+            { bg: '#e4ff5e', chars: [`<span class="font-outline">N</span>`, `<span class="font-brutal">O</span>`, SVGS.waveT, `<span class="font-tech">N</span>`, SVGS.targetA, `<span class="font-outline">H</span>`, `<span class="font-elegant">i</span>`, SVGS.splitD] }, 
+            { bg: '#1fa147', chars: [SVGS.sharpN, `<span class="font-elegant">o</span>`, `<span class="font-tech">T</span>`, `<span class="font-outline">N</span>`, `<span class="font-elegant">a</span>`, SVGS.checkerH, `<span class="font-brutal">I</span>`, `<span class="font-outline">D</span>`] }, 
+            { bg: '#fe8b40', chars: [`<span class="font-tech">N</span>`, SVGS.bauhausO, `<span class="font-elegant">t</span>`, `<span class="font-brutal">N</span>`, `<span class="font-outline">A</span>`, `<span class="font-tech">H</span>`, SVGS.pillarI, `<span class="font-elegant">d</span>`] }, 
+            { bg: '#ff2a6d', chars: [`<span class="font-outline">N</span>`, `<span class="font-tech">O</span>`, `<span class="font-brutal">T</span>`, SVGS.sharpN, SVGS.targetA, `<span class="font-elegant">h</span>`, `<span class="font-outline">I</span>`, SVGS.splitD] }
+        ];
+
+        const livingBehaviors = ['anim-hover', 'anim-pulse', 'anim-tilt'];
+        let currentPhase = 0;
+        let autoTimer;
+        let activeTimeouts = [];
+        
+        const letterWrappers = [];
+        for (let i = 0; i < 8; i++) { letterWrappers.push(document.getElementById(`char-${i}`)); }
+
+        function triggerPhaseUpdate(isManualClick = false) {
+            activeTimeouts.forEach(t => clearTimeout(t));
+            activeTimeouts = [];
+            if (isManualClick) { clearInterval(autoTimer); startAutoTimer(); }
+
+            const phaseData = phases[currentPhase];
+            document.documentElement.style.setProperty('--bg-color', phaseData.bg);
+
+            letterWrappers.forEach((wrapper, index) => {
+                const randomDelay = Math.random() * 1000; // Slightly faster glitch (1s max delay)
+                const timeout = setTimeout(() => {
+                    const randomAnim = livingBehaviors[Math.floor(Math.random() * livingBehaviors.length)];
+                    wrapper.innerHTML = `<span class="living-char ${randomAnim}">${phaseData.chars[index]}</span>`;
+                }, randomDelay);
+                activeTimeouts.push(timeout);
+            });
+
+            currentPhase = (currentPhase + 1) % phases.length;
+        }
+
+        function startAutoTimer() { autoTimer = setInterval(() => triggerPhaseUpdate(false), 3500); }
+        triggerPhaseUpdate(false);
+        startAutoTimer();
+        window.addEventListener('click', () => triggerPhaseUpdate(true));
+
+
+        // --- THE CHAOTIC MOUSE TRAIL LOGIC ---
+    
+
+        window.addEventListener('mousemove', (e) => {
+            const dx = e.clientX - lastMousePos.x;
+            const dy = e.clientY - lastMousePos.y;
+            if (Math.hypot(dx, dy) > threshold) {
+                lastMousePos = { x: e.clientX, y: e.clientY };
+
+                const stamp = document.createElement('div');
+                stamp.classList.add('trail-item');
+                stamp.innerText = trailImages[Math.floor(Math.random() * trailImages.length)];
+                
+                stamp.style.left = `${e.clientX}px`;
+                stamp.style.top = `${e.clientY}px`;
+
+                const randomRotation = (Math.random() * 60 - 30) + 'deg'; 
+                const randomScale = (0.8 + Math.random() * 0.5); 
+                stamp.style.setProperty('--rot', randomRotation);
+                stamp.style.setProperty('--scl', randomScale);
+
+                document.body.appendChild(stamp);
+                setTimeout(() => stamp.remove(), 1200);
+            }
+        });
+    </script>
+</body>
+</html>
