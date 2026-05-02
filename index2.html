@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Nahid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Inter:wght@700&display=swap');
+
+        :root {
+            --bg-color: #D8FF7C;
+            --text-color: #000000;
+            --accent-border: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2.5rem;
+        }
+
+        /* ── Hero ── */
+        .hero-text {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(72px, 22vw, 280px);
+            line-height: 0.85;
+            text-transform: lowercase;
+            letter-spacing: -0.06em;
+            font-weight: 800;
+            margin-top: -1vw;
+        }
+
+        /* ── Bottom row ── */
+        .bottom-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bio-text {
+            max-width: 450px;
+            font-size: clamp(11px, 1.2vw, 14px);
+            line-height: 1.4;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        /* ── Nav buttons ── */
+        .nav-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .pill-btn {
+            border: 2px solid var(--accent-border);
+            border-radius: 50px;
+            padding: 8px 24px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+
+        .pill-btn:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        /* ── Tablet ── */
+        @media (max-width: 900px) {
+            body { padding: 2rem; }
+
+            .bio-text {
+                font-size: 12px;
+                max-width: 280px;
+            }
+        }
+
+        /* ── Mobile ── */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.25rem 1.25rem 1.75rem;
+                min-height: 100svh;          /* use small viewport height on mobile */
+                justify-content: space-between;
+                overflow-x: hidden;
+            }
+
+            .hero-text {
+                font-size: clamp(68px, 26vw, 130px);
+                margin-top: 0;
+            }
+
+            .bottom-layout {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            .bio-text {
+                font-size: 11px;
+                max-width: 100%;
+                line-height: 1.5;
+            }
+
+            .nav-container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .pill-btn {
+                padding: 10px 16px;
+                font-size: 11px;
+                width: 100%;
+            }
+        }
+
+        /* ── Very small screens (≤360px) ── */
+        @media (max-width: 360px) {
+            .hero-text {
+                font-size: 22vw;
+            }
+
+            .pill-btn {
+                padding: 9px 12px;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="hero-text">not<br>nahid</h1>
+
+    <div class="bottom-layout">
+        <div class="bio-text">
+            CREATIVE DIRECTOR AND DEVELOPER SPECIALIZING IN
+            MINIMALIST INTERFACES AND RETRO-TECH AESTHETICS.
+            CURRENTLY EXPLORING THE INTERSECTION OF CLASSICAL
+            LITERATURE AND DIGITAL DESIGN.
+        </div>
+        <div class="nav-container">
+            <a href="#" class="pill-btn">Works</a>
+            <a href="#" class="pill-btn">Info</a>
+            <a href="#" class="pill-btn">Labs</a>
+            <a href="#" class="pill-btn">Social</a>
+        </div>
+    </div>
+
+</body>
+</html>
