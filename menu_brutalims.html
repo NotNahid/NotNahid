@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimental Brutalist Menu</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            cursor: crosshair;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            background-color: #6B704C; /* Initial Olive Green */
+            transition: background-color 0.4s ease;
+        }
+
+        /* The Main Layout Grid */
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            z-index: 2;
+        }
+
+        /* Top & Bottom Navigation */
+        .nav-top, .nav-bottom {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            color: #FF3E55;
+            transition: color 0.3s;
+        }
+
+        /* Large Menu Items */
+        .menu-items {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 100px 60px;
+            pointer-events: none;
+        }
+
+        .menu-link {
+            pointer-events: auto;
+            text-decoration: none;
+            color: #FF3E55;
+            font-size: clamp(4rem, 10vw, 8rem);
+            line-height: 0.9;
+            position: relative;
+            width: fit-content;
+            transition: color 0.3s;
+        }
+
+        .sup {
+            font-size: 1.5rem;
+            vertical-align: super;
+            margin-left: 5px;
+        }
+
+        /* Centered Image Preview */
+        .image-preview-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vw;
+            height: 55vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .preview-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            box-shadow: 0 0 50px rgba(0,0,0,0.2);
+        }
+
+        /* Specific Placements to match your screenshots */
+        .item-portraits { grid-column: 1; align-self: start; }
+        .item-projects { grid-column: 2; align-self: start; margin-top: 100px; }
+        .item-commissions { grid-column: 1; align-self: center; margin-left: 20px; }
+        .item-film { grid-column: 2; align-self: center; margin-top: 50px; }
+        .item-diary { grid-column: 1; align-self: end; }
+
+        /* Hover States - Colors and Image Toggles */
+        body:has(.item-portraits:hover) { background-color: #2E19A7; } /* Purple */
+        body:has(.item-projects:hover) { background-color: #D35C47; } /* Burnt Orange */
+        body:has(.item-film:hover) { background-color: #D9C292; }     /* Tan/Beige */
+        body:has(.item-diary:hover) { background-color: #63545A; }    /* Dusty Mauve */
+
+        /* Changing text color to white on hover for visibility */
+        .menu-link:hover, 
+        body:has(.menu-link:hover) .nav-top,
+        body:has(.menu-link:hover) .nav-bottom {
+            color: white;
+        }
+
+        /* Show the correct image based on which link is hovered */
+        .item-portraits:hover ~ .image-preview-container .img-portraits { opacity: 1; }
+        .item-projects:hover ~ .image-preview-container .img-projects { opacity: 1; }
+        .item-film:hover ~ .image-preview-container .img-film { opacity: 1; }
+        .item-diary:hover ~ .image-preview-container .img-diary { opacity: 1; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-top">
+            <div>D — L</div>
+            <div>Close</div>
+        </div>
+
+        <div class="menu-items">
+            <a href="#" class="menu-link item-portraits">Portraits<span class="sup">111</span></a>
+            <a href="#" class="menu-link item-projects">Projects<span class="sup">52</span></a>
+            <a href="#" class="menu-link item-commissions">Commissions<span class="sup">55</span></a>
+            <a href="#" class="menu-link item-film">Film<span class="sup">26</span></a>
+            <a href="#" class="menu-link item-diary">Diary<span class="sup">301</span></a>
+
+            <div class="image-preview-container">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" class="preview-img img-portraits" alt="Portraits">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" class="preview-img img-projects" alt="Projects">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" class="preview-img img-film" alt="Film">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" class="preview-img img-diary" alt="Diary">
+            </div>
+        </div>
+
+        <div class="nav-bottom">
+            <div>Instagram — 2026©</div>
+            <div>About</div>
+        </div>
+    </div>
+
+</body>
+</html>
