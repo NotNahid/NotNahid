@@ -2,104 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Not Nahid - High-End Editorial</title>
-    
-    <!-- Premium Editorial Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Space+Grotesk:wght@500;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
 
     <style>
-        :root {
-            --bg-color: #beb5ff; 
-        }
+        :root { --bg-color: #beb5ff; }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+
         body, html {
-            width: 100%; height: 100vh;
+            width: 100%; height: 100%; min-height: 100dvh;
             color: #1a1a1a;
             font-family: 'Space Grotesk', sans-serif;
             overflow: hidden;
             background-color: var(--bg-color);
-            transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            
-            -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+            transition: background-color 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-user-select: none; user-select: none;
             cursor: crosshair;
         }
 
         header, footer {
-            position: fixed; width: 100%; padding: 1.5rem 2rem;
+            position: fixed; width: 100%; padding: 1.2rem 1.5rem;
             display: flex; justify-content: space-between;
-            font-size: 0.85rem; font-weight: 500; z-index: 20; pointer-events: none;
+            font-size: 0.8rem; font-weight: 500;
+            z-index: 20; pointer-events: none;
         }
         header { top: 0; align-items: flex-start; }
         footer { bottom: 0; align-items: flex-end; }
-        .logo { border: 1.5px solid #1a1a1a; border-radius: 50px; padding: 0.4rem 1.2rem; font-weight: 800; font-family: 'Syne', sans-serif;}
-        .meta-right, .location { text-align: right; font-size: 0.7rem; text-transform: uppercase; line-height: 1.4; letter-spacing: 0.05em; }
 
+        .logo {
+            border: 1.5px solid #1a1a1a; border-radius: 50px;
+            padding: 0.35rem 1rem; font-weight: 800;
+            font-family: 'Syne', sans-serif; font-size: 0.85rem; white-space: nowrap;
+        }
+        .meta-right, .location {
+            text-align: right; font-size: 0.65rem;
+            text-transform: uppercase; line-height: 1.4; letter-spacing: 0.05em;
+        }
+
+        /* ── HERO ── */
         .hero-text-container {
-            width: 100%; height: 100%;
+            width: 100%; height: 100dvh;
             display: flex; flex-direction: column;
             justify-content: center; align-items: center;
+            padding: 4.5rem 0 3.5rem;
             z-index: 2; position: relative;
+            gap: 1.5vw; /* breathing room between the two rows */
         }
 
         .text-row {
-            display: flex; align-items: baseline; /* Locks the text to a perfect designer baseline */
+            display: flex;
+            align-items: center;
             justify-content: center;
-            font-size: 14vw; 
-            line-height: 0.85; 
-            letter-spacing: -0.02em;
+            font-size: 17vw;
+            line-height: 1;
+            letter-spacing: 0;
         }
 
-        /* STRICT GRID: This prevents the word from shifting widths/heights */
+        /* Each cell: width = font-size unit, generous height, gap via margin */
         .letter-container {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 0.8em; height: 1em; /* Fixed designer grid */
-            margin: 0 0.02em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 17vw;
+            height: 19vw;
+            flex-shrink: 0;
+            margin: 0 0.8vw; /* gap between letters — this is the "space" */
+            position: relative;
         }
 
-        .letter-wrapper { display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
-        
-        /* Subtle, premium physics */
-        .living-char { display: inline-block; will-change: transform; width: 100%; text-align: center; }
-        .anim-hover { animation: hoverAnim 3s ease-in-out infinite alternate; }
-        .anim-pulse { animation: pulseAnim 4s ease-in-out infinite alternate; }
-        .anim-tilt { animation: tiltAnim 5s ease-in-out infinite alternate; }
+        .letter-wrapper {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 100%; height: 100%;
+        }
 
-        @keyframes hoverAnim { 0% { transform: translateY(2%); } 100% { transform: translateY(-2%); } }
-        @keyframes pulseAnim { 0% { transform: scale(0.97); } 100% { transform: scale(1.03); } }
-        @keyframes tiltAnim { 0% { transform: rotate(-2deg); } 100% { transform: rotate(2deg); } }
+        /* ── LIVING CHAR — base for all motion ── */
+        .living-char {
+            display: inline-block;
+            will-change: transform, opacity;
+            width: 100%; text-align: center; line-height: 1;
+            transform-origin: center center;
+        }
 
-        /* --- THE DESIGNER TYPOGRAPHY ENGINE --- */
-        /* No more stretching. Pure font weights and styling. */
-        .font-brutal { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; }
-        .font-elegant { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; text-transform: lowercase; letter-spacing: -0.05em; }
-        .font-tech { font-family: 'Space Grotesk', sans-serif; font-weight: 500; text-transform: uppercase; }
-        .font-outline { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; color: transparent; -webkit-text-stroke: 3px #1a1a1a; }
-        .font-light { font-family: 'Syne', sans-serif; font-weight: 400; text-transform: uppercase; }
+        /* ── PHASE-IN: every character stamps in from nothing ── */
+        .living-char {
+            animation-fill-mode: both;
+        }
 
-        /* Perfected SVG Geometry */
-        .custom-svg { width: 0.8em; height: 0.8em; display: flex; align-items: center; justify-content: center; }
+        /* Stamp-in keyframe — plays once on inject, then hands off to idle anim */
+        @keyframes stampIn {
+            0%   { opacity: 0; transform: scale(0.4) rotate(-8deg); }
+            60%  { opacity: 1; transform: scale(1.12) rotate(2deg); }
+            80%  { transform: scale(0.95) rotate(-1deg); }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        /* ── IDLE ANIMATIONS — richer & more varied ── */
+
+        /* Slow breathe up/down */
+        .anim-hover {
+            animation: stampIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both,
+                       hoverAnim 3.2s ease-in-out infinite alternate 0.55s;
+        }
+        @keyframes hoverAnim {
+            0%   { transform: translateY(4%) rotate(-0.5deg); }
+            50%  { transform: translateY(-5%) rotate(0.5deg); }
+            100% { transform: translateY(3%) rotate(-0.5deg); }
+        }
+
+        /* Scale pulse with slight skew */
+        .anim-pulse {
+            animation: stampIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both,
+                       pulseAnim 4s ease-in-out infinite alternate 0.55s;
+        }
+        @keyframes pulseAnim {
+            0%   { transform: scale(0.93) skewX(-1deg); }
+            50%  { transform: scale(1.06) skewX(1deg); }
+            100% { transform: scale(0.95) skewX(0deg); }
+        }
+
+        /* Pendulum tilt */
+        .anim-tilt {
+            animation: stampIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both,
+                       tiltAnim 5s ease-in-out infinite alternate 0.55s;
+        }
+        @keyframes tiltAnim {
+            0%   { transform: rotate(-4deg) translateY(2%); }
+            50%  { transform: rotate(2deg) translateY(-2%); }
+            100% { transform: rotate(-3deg) translateY(1%); }
+        }
+
+        /* Float + drift — new */
+        .anim-drift {
+            animation: stampIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both,
+                       driftAnim 6s ease-in-out infinite alternate 0.55s;
+        }
+        @keyframes driftAnim {
+            0%   { transform: translate(-3%, 2%) rotate(1deg); }
+            33%  { transform: translate(2%, -4%) rotate(-2deg); }
+            66%  { transform: translate(-1%, 3%) rotate(1.5deg); }
+            100% { transform: translate(3%, -2%) rotate(-1deg); }
+        }
+
+        /* Squish — new */
+        .anim-squish {
+            animation: stampIn 0.55s cubic-bezier(0.34,1.56,0.64,1) both,
+                       squishAnim 3.5s ease-in-out infinite alternate 0.55s;
+        }
+        @keyframes squishAnim {
+            0%   { transform: scaleX(1.08) scaleY(0.93); }
+            50%  { transform: scaleX(0.94) scaleY(1.07); }
+            100% { transform: scaleX(1.05) scaleY(0.96); }
+        }
+
+        /* ── TYPOGRAPHY ── */
+        .font-brutal  { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; }
+        .font-elegant { font-family: 'Playfair Display', serif; font-weight: 600; font-style: italic; text-transform: lowercase; }
+        .font-tech    { font-family: 'Space Grotesk', sans-serif; font-weight: 500; text-transform: uppercase; }
+        .font-outline { font-family: 'Syne', sans-serif; font-weight: 800; text-transform: uppercase; color: transparent; -webkit-text-stroke: 2px #1a1a1a; }
+        .font-light   { font-family: 'Syne', sans-serif; font-weight: 400; text-transform: uppercase; }
+
+        /* ── SVG GEOMETRY ── */
+        .custom-svg { width: 0.78em; height: 0.78em; display: flex; align-items: center; justify-content: center; }
         .custom-svg svg { width: 100%; height: 100%; overflow: visible; }
-        .bg-fill { fill: var(--bg-color); transition: fill 0.8s ease; }
-        .bg-stroke { stroke: var(--bg-color); transition: stroke 0.8s ease; }
+        .bg-fill   { fill:   var(--bg-color); transition: fill   0.9s ease; }
+        .bg-stroke { stroke: var(--bg-color); transition: stroke 0.9s ease; }
 
+        /* ── MOUSE TRAIL ── */
         .trail-item {
             position: fixed; pointer-events: none; z-index: 10;
-            font-size: clamp(80px, 10vw, 150px); filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.4));
+            font-size: clamp(44px, 7vw, 100px);
             will-change: transform, opacity;
-            animation: stampInAndOut 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            animation: trailAnim 1.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
             transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl));
         }
+        @keyframes trailAnim {
+            0%   { opacity: 0; transform: translate(-50%, -50%) rotate(var(--rot)) scale(0) ; }
+            18%  { opacity: 1; transform: translate(-50%, -60%) rotate(var(--rot)) scale(var(--scl)); }
+            65%  { opacity: 0.9; }
+            100% { opacity: 0; transform: translate(-50%, calc(-50% + 60px)) rotate(calc(var(--rot) + 15deg)) scale(calc(var(--scl) * 0.6)); }
+        }
 
-        @keyframes stampInAndOut {
-            0% { opacity: 0; transform: translate(-50%, -50%) rotate(var(--rot)) scale(0); }
-            15% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl)); }
-            70% { opacity: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--scl)); }
-            100% { opacity: 0; transform: translate(-50%, calc(-50% + 50px)) rotate(var(--rot)) scale(calc(var(--scl) * 0.8)); }
+        /* ── MOBILE ── */
+        @media (max-width: 480px) {
+            header, footer { padding: 1rem; }
+            .logo { font-size: 0.72rem; padding: 0.28rem 0.7rem; }
+            .meta-right, .location { font-size: 0.58rem; }
+            .hero-text-container { padding: 3.5rem 0 3rem; gap: 2vw; }
+            .font-outline { -webkit-text-stroke: 1.5px #1a1a1a; }
+            /* Slightly smaller on mobile so 5-char row fits with margins */
+            .text-row { font-size: 15.5vw; }
+            .letter-container { width: 15.5vw; height: 17.5vw; margin: 0 0.6vw; }
+        }
+
+        @media (max-width: 360px) {
+            .text-row { font-size: 14.5vw; }
+            .letter-container { width: 14.5vw; height: 16.5vw; margin: 0 0.4vw; }
         }
     </style>
 </head>
@@ -111,12 +213,12 @@
     </header>
 
     <div class="hero-text-container" id="text-board">
-        <div class="text-row">
+        <div class="text-row" id="row-1">
             <div class="letter-container"><span class="letter-wrapper" id="char-0"></span></div>
             <div class="letter-container"><span class="letter-wrapper" id="char-1"></span></div>
             <div class="letter-container"><span class="letter-wrapper" id="char-2"></span></div>
         </div>
-        <div class="text-row" style="margin-top: -0.1em;">
+        <div class="text-row" id="row-2">
             <div class="letter-container"><span class="letter-wrapper" id="char-3"></span></div>
             <div class="letter-container"><span class="letter-wrapper" id="char-4"></span></div>
             <div class="letter-container"><span class="letter-wrapper" id="char-5"></span></div>
@@ -131,9 +233,7 @@
     </footer>
 
     <script>
-        // --- HIGH-END BAUHAUS GEOMETRY SVGS ---
         const SVGS = {
-            // Orbiting minimal O
             bauhausO: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <circle cx="50" cy="50" r="45" fill="none" stroke="#1a1a1a" stroke-width="10"/>
                 <circle cx="50" cy="50" r="12" fill="#1a1a1a">
@@ -141,13 +241,11 @@
                     <animate attributeName="cy" values="15; 85; 15" dur="4s" repeatCount="indefinite"/>
                 </circle>
             </svg></span>`,
-            
-            // Sharp vector N
+
             sharpN: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <polygon points="10,100 10,0 35,0 90,75 90,0 100,0 100,100 75,100 20,25 20,100" fill="#1a1a1a"/>
             </svg></span>`,
 
-            // Geometric Target A
             targetA: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <polygon points="50,0 0,100 25,100 50,45 75,100 100,100" fill="#1a1a1a"/>
                 <circle cx="50" cy="75" r="12" fill="#1a1a1a">
@@ -155,7 +253,6 @@
                 </circle>
             </svg></span>`,
 
-            // Elegant split D
             splitD: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <path d="M10,0 L40,0 A50,50 0 0,1 40,100 L10,100 Z" fill="#1a1a1a"/>
                 <path d="M45,10 A40,40 0 0,1 45,90" fill="none" stroke="#1a1a1a" stroke-width="6" class="bg-stroke">
@@ -163,22 +260,19 @@
                 </path>
             </svg></span>`,
 
-            // Fluid Wave T
             waveT: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <rect x="0" y="0" width="100" height="20" fill="#1a1a1a"/>
                 <path d="M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z" fill="#1a1a1a">
-                    <animate attributeName="d" values="M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z; M40,20 Q20,60 40,100 L60,100 Q40,60 60,20 Z; M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="d" values="M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z;M40,20 Q20,60 40,100 L60,100 Q40,60 60,20 Z;M40,20 Q60,60 40,100 L60,100 Q80,60 60,20 Z" dur="3s" repeatCount="indefinite"/>
                 </path>
             </svg></span>`,
 
-            // Constructivist Pillar I
             pillarI: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <rect x="35" y="0" width="30" height="100" fill="#1a1a1a"/>
                 <rect x="25" y="25" width="50" height="8" class="bg-fill"/>
                 <rect x="25" y="65" width="50" height="8" class="bg-fill"/>
             </svg></span>`,
 
-            // Checkerboard H
             checkerH: `<span class="custom-svg"><svg viewBox="0 0 100 100">
                 <rect x="10" y="0" width="30" height="100" fill="#1a1a1a"/>
                 <rect x="60" y="0" width="30" height="100" fill="#1a1a1a"/>
@@ -188,74 +282,80 @@
             </svg></span>`
         };
 
-        // --- HIGH-END CURATED TYPOGRAPHY PHASES ---
         const phases = [
-            { bg: '#beb5ff', chars: [`<span class="font-elegant">n</span>`, SVGS.bauhausO, `<span class="font-outline">T</span>`, SVGS.sharpN, `<span class="font-brutal">A</span>`, `<span class="font-elegant">h</span>`, SVGS.pillarI, `<span class="font-tech">D</span>`] }, 
-            { bg: '#e4ff5e', chars: [`<span class="font-outline">N</span>`, `<span class="font-brutal">O</span>`, SVGS.waveT, `<span class="font-tech">N</span>`, SVGS.targetA, `<span class="font-outline">H</span>`, `<span class="font-elegant">i</span>`, SVGS.splitD] }, 
-            { bg: '#1fa147', chars: [SVGS.sharpN, `<span class="font-elegant">o</span>`, `<span class="font-tech">T</span>`, `<span class="font-outline">N</span>`, `<span class="font-elegant">a</span>`, SVGS.checkerH, `<span class="font-brutal">I</span>`, `<span class="font-outline">D</span>`] }, 
-            { bg: '#fe8b40', chars: [`<span class="font-tech">N</span>`, SVGS.bauhausO, `<span class="font-elegant">t</span>`, `<span class="font-brutal">N</span>`, `<span class="font-outline">A</span>`, `<span class="font-tech">H</span>`, SVGS.pillarI, `<span class="font-elegant">d</span>`] }, 
+            { bg: '#beb5ff', chars: [`<span class="font-elegant">n</span>`, SVGS.bauhausO, `<span class="font-outline">T</span>`, SVGS.sharpN, `<span class="font-brutal">A</span>`, `<span class="font-elegant">h</span>`, SVGS.pillarI, `<span class="font-tech">D</span>`] },
+            { bg: '#e4ff5e', chars: [`<span class="font-outline">N</span>`, `<span class="font-brutal">O</span>`, SVGS.waveT, `<span class="font-tech">N</span>`, SVGS.targetA, `<span class="font-outline">H</span>`, `<span class="font-elegant">i</span>`, SVGS.splitD] },
+            { bg: '#1fa147', chars: [SVGS.sharpN, `<span class="font-elegant">o</span>`, `<span class="font-tech">T</span>`, `<span class="font-outline">N</span>`, `<span class="font-elegant">a</span>`, SVGS.checkerH, `<span class="font-brutal">I</span>`, `<span class="font-outline">D</span>`] },
+            { bg: '#fe8b40', chars: [`<span class="font-tech">N</span>`, SVGS.bauhausO, `<span class="font-elegant">t</span>`, `<span class="font-brutal">N</span>`, `<span class="font-outline">A</span>`, `<span class="font-tech">H</span>`, SVGS.pillarI, `<span class="font-elegant">d</span>`] },
             { bg: '#ff2a6d', chars: [`<span class="font-outline">N</span>`, `<span class="font-tech">O</span>`, `<span class="font-brutal">T</span>`, SVGS.sharpN, SVGS.targetA, `<span class="font-elegant">h</span>`, `<span class="font-outline">I</span>`, SVGS.splitD] }
         ];
 
-        const livingBehaviors = ['anim-hover', 'anim-pulse', 'anim-tilt'];
-        let currentPhase = 0;
-        let autoTimer;
+        // 5 motions now including the new ones
+        const livingBehaviors = ['anim-hover', 'anim-pulse', 'anim-tilt', 'anim-drift', 'anim-squish'];
+
+        let currentPhase = 0, autoTimer;
         let activeTimeouts = [];
-        
-        const letterWrappers = [];
-        for (let i = 0; i < 8; i++) { letterWrappers.push(document.getElementById(`char-${i}`)); }
+        const letterWrappers = Array.from({ length: 8 }, (_, i) => document.getElementById(`char-${i}`));
 
-        function triggerPhaseUpdate(isManualClick = false) {
-            activeTimeouts.forEach(t => clearTimeout(t));
+        // Track last used animation per slot to avoid repeats
+        const lastAnims = new Array(8).fill('');
+
+        function pickAnim(i) {
+            const pool = livingBehaviors.filter(a => a !== lastAnims[i]);
+            const pick = pool[Math.floor(Math.random() * pool.length)];
+            lastAnims[i] = pick;
+            return pick;
+        }
+
+        function triggerPhaseUpdate(isManual = false) {
+            activeTimeouts.forEach(clearTimeout);
             activeTimeouts = [];
-            if (isManualClick) { clearInterval(autoTimer); startAutoTimer(); }
+            if (isManual) { clearInterval(autoTimer); startAutoTimer(); }
 
-            const phaseData = phases[currentPhase];
-            document.documentElement.style.setProperty('--bg-color', phaseData.bg);
+            const { bg, chars } = phases[currentPhase];
+            document.documentElement.style.setProperty('--bg-color', bg);
 
-            letterWrappers.forEach((wrapper, index) => {
-                const randomDelay = Math.random() * 1000; // Slightly faster glitch (1s max delay)
-                const timeout = setTimeout(() => {
-                    const randomAnim = livingBehaviors[Math.floor(Math.random() * livingBehaviors.length)];
-                    wrapper.innerHTML = `<span class="living-char ${randomAnim}">${phaseData.chars[index]}</span>`;
-                }, randomDelay);
-                activeTimeouts.push(timeout);
+            // Stagger: letters fly in one by one, slightly offset
+            letterWrappers.forEach((wrapper, i) => {
+                // First 3 letters (row 1) come in from slightly above; row 2 from below
+                const baseDelay = i < 3 ? i * 90 : 80 + (i - 3) * 80;
+                const jitter = Math.random() * 60;
+                const t = setTimeout(() => {
+                    const anim = pickAnim(i);
+                    wrapper.innerHTML = `<span class="living-char ${anim}">${chars[i]}</span>`;
+                }, baseDelay + jitter);
+                activeTimeouts.push(t);
             });
 
             currentPhase = (currentPhase + 1) % phases.length;
         }
 
-        function startAutoTimer() { autoTimer = setInterval(() => triggerPhaseUpdate(false), 3500); }
+        function startAutoTimer() { autoTimer = setInterval(() => triggerPhaseUpdate(false), 4000); }
         triggerPhaseUpdate(false);
         startAutoTimer();
-        window.addEventListener('click', () => triggerPhaseUpdate(true));
+        window.addEventListener('click',      () => triggerPhaseUpdate(true));
+        window.addEventListener('touchstart', () => triggerPhaseUpdate(true), { passive: true });
 
+        /* ── MOUSE / TOUCH TRAIL ── */
+        const trailGlyphs = ['✦', '◆', '●', '▲', '★', '◉', '✿', '⬟', '✚', '◈'];
+        let lastPos = { x: -999, y: -999 };
 
-        // --- THE CHAOTIC MOUSE TRAIL LOGIC ---
-    
+        function spawnTrail(x, y) {
+            if (Math.hypot(x - lastPos.x, y - lastPos.y) < 36) return;
+            lastPos = { x, y };
+            const el = document.createElement('div');
+            el.className = 'trail-item';
+            el.innerText = trailGlyphs[Math.floor(Math.random() * trailGlyphs.length)];
+            el.style.left = `${x}px`;
+            el.style.top  = `${y}px`;
+            el.style.setProperty('--rot', (Math.random() * 70 - 35) + 'deg');
+            el.style.setProperty('--scl', (0.7 + Math.random() * 0.7).toString());
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 1400);
+        }
 
-        window.addEventListener('mousemove', (e) => {
-            const dx = e.clientX - lastMousePos.x;
-            const dy = e.clientY - lastMousePos.y;
-            if (Math.hypot(dx, dy) > threshold) {
-                lastMousePos = { x: e.clientX, y: e.clientY };
-
-                const stamp = document.createElement('div');
-                stamp.classList.add('trail-item');
-                stamp.innerText = trailImages[Math.floor(Math.random() * trailImages.length)];
-                
-                stamp.style.left = `${e.clientX}px`;
-                stamp.style.top = `${e.clientY}px`;
-
-                const randomRotation = (Math.random() * 60 - 30) + 'deg'; 
-                const randomScale = (0.8 + Math.random() * 0.5); 
-                stamp.style.setProperty('--rot', randomRotation);
-                stamp.style.setProperty('--scl', randomScale);
-
-                document.body.appendChild(stamp);
-                setTimeout(() => stamp.remove(), 1200);
-            }
-        });
+        window.addEventListener('mousemove', e => spawnTrail(e.clientX, e.clientY));
+        window.addEventListener('touchmove',  e => spawnTrail(e.touches[0].clientX, e.touches[0].clientY), { passive: true });
     </script>
 </body>
 </html>
