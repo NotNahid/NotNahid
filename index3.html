@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Nahid</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Inter:wght@700&display=swap');
+
+        :root {
+            --bg-color: #D8FF7C;
+            --text-color: #000000;
+            --accent-border: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2.5rem;
+        }
+
+        .hero-text {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(72px, 22vw, 280px);
+            line-height: 0.85;
+            text-transform: lowercase;
+            letter-spacing: -0.06em;
+            font-weight: 800;
+            margin-top: -1vw;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            cursor: default;
+        }
+
+        .letter-i {
+            position: relative;
+            display: inline-block;
+        }
+
+        .star-container {
+            position: absolute;
+            top: -0.22em;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0.48em;
+            height: 0.48em;
+            perspective: 800px;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .star-3d {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotateStar 4s ease-in-out infinite;
+        }
+
+        .star-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            backface-visibility: visible;
+        }
+
+        .star-face svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+        }
+
+        .star-face:nth-child(1) {
+            transform: translateZ(0.08em);
+        }
+        .star-face:nth-child(1) polygon {
+            fill: url(#grad1);
+        }
+
+        .star-face:nth-child(2) {
+            transform: rotateY(180deg) translateZ(0.08em);
+        }
+        .star-face:nth-child(2) polygon {
+            fill: url(#grad2);
+        }
+
+        .star-face:nth-child(3) {
+            transform: rotateY(90deg) translateZ(0.08em);
+        }
+        .star-face:nth-child(3) polygon {
+            fill: url(#grad3);
+        }
+
+        .star-face:nth-child(4) {
+            transform: rotateY(-90deg) translateZ(0.08em);
+        }
+        .star-face:nth-child(4) polygon {
+            fill: url(#grad4);
+        }
+
+        .star-face:nth-child(5) {
+            transform: rotateX(90deg) translateZ(0.08em);
+        }
+        .star-face:nth-child(5) polygon {
+            fill: url(#grad5);
+        }
+
+        .star-face:nth-child(6) {
+            transform: rotateX(-90deg) translateZ(0.08em);
+        }
+        .star-face:nth-child(6) polygon {
+            fill: url(#grad6);
+        }
+
+        @keyframes rotateStar {
+            0%   { transform: rotateX(0deg)   rotateY(0deg)   rotateZ(0deg); }
+            25%  { transform: rotateX(90deg)  rotateY(180deg) rotateZ(45deg); }
+            50%  { transform: rotateX(180deg) rotateY(360deg) rotateZ(0deg); }
+            75%  { transform: rotateX(270deg) rotateY(540deg) rotateZ(-45deg); }
+            100% { transform: rotateX(360deg) rotateY(720deg) rotateZ(0deg); }
+        }
+
+        /* Shimmer / glow pulse on the star */
+        .star-3d::after {
+            content: '';
+            position: absolute;
+            inset: -20%;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,100,200,0.3) 0%, transparent 70%);
+            animation: glowPulse 2s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes glowPulse {
+            0%, 100% { opacity: 0.4; transform: scale(0.8); }
+            50%      { opacity: 1;   transform: scale(1.2); }
+        }
+
+        .bottom-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bio-text {
+            max-width: 450px;
+            font-size: clamp(11px, 1.2vw, 14px);
+            line-height: 1.4;
+            text-transform: uppercase;
+            font-weight: 700;
+            pointer-events: none;
+            user-select: none;
+            cursor: default;
+        }
+
+        .nav-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .pill-btn {
+            border: 2px solid var(--accent-border);
+            border-radius: 50px;
+            padding: 8px 24px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
+        }
+
+        .pill-btn:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        @media (max-width: 900px) {
+            body { padding: 2rem; }
+            .bio-text {
+                font-size: 12px;
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.25rem 1.25rem 1.75rem;
+                min-height: 100svh;
+                justify-content: space-between;
+                overflow-x: hidden;
+            }
+            .hero-text {
+                font-size: clamp(68px, 26vw, 130px);
+                margin-top: 0;
+            }
+            .bottom-layout {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            .bio-text {
+                font-size: 11px;
+                max-width: 100%;
+                line-height: 1.5;
+            }
+            .nav-container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            .pill-btn {
+                padding: 10px 16px;
+                font-size: 11px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-text { font-size: 22vw; }
+            .pill-btn { padding: 9px 12px; font-size: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hidden SVG defs for colorful gradients -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FF6B6B"/>
+                <stop offset="30%" style="stop-color:#FFE66D"/>
+                <stop offset="60%" style="stop-color:#4ECDC4"/>
+                <stop offset="100%" style="stop-color:#A855F7"/>
+            </linearGradient>
+            <linearGradient id="grad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#F472B6"/>
+                <stop offset="35%" style="stop-color:#FB923C"/>
+                <stop offset="70%" style="stop-color:#FACC15"/>
+                <stop offset="100%" style="stop-color:#34D399"/>
+            </linearGradient>
+            <linearGradient id="grad3" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#818CF8"/>
+                <stop offset="40%" style="stop-color:#E879F9"/>
+                <stop offset="75%" style="stop-color:#FB7185"/>
+                <stop offset="100%" style="stop-color:#FDBA74"/>
+            </linearGradient>
+            <linearGradient id="grad4" x1="50%" y1="0%" x2="50%" y2="100%">
+                <stop offset="0%" style="stop-color:#2DD4BF"/>
+                <stop offset="33%" style="stop-color:#38BDF8"/>
+                <stop offset="66%" style="stop-color:#A78BFA"/>
+                <stop offset="100%" style="stop-color:#F472B6"/>
+            </linearGradient>
+            <linearGradient id="grad5" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="0%" style="stop-color:#FDE047"/>
+                <stop offset="25%" style="stop-color:#FB923C"/>
+                <stop offset="50%" style="stop-color:#F43F5E"/>
+                <stop offset="75%" style="stop-color:#D946EF"/>
+                <stop offset="100%" style="stop-color:#8B5CF6"/>
+            </linearGradient>
+            <linearGradient id="grad6" x1="100%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" style="stop-color:#06B6D4"/>
+                <stop offset="30%" style="stop-color:#10B981"/>
+                <stop offset="60%" style="stop-color:#84CC16"/>
+                <stop offset="100%" style="stop-color:#EAB308"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <h1 class="hero-text">not<br>nah<span class="letter-i"><span class="star-container"><div class="star-3d">
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad1)" stroke="#000" stroke-width="2"/></svg></div>
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad2)" stroke="#000" stroke-width="2"/></svg></div>
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad3)" stroke="#000" stroke-width="2"/></svg></div>
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad4)" stroke="#000" stroke-width="2"/></svg></div>
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad5)" stroke="#000" stroke-width="2"/></svg></div>
+        <div class="star-face"><svg viewBox="0 0 100 100"><polygon points="50,2 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35" fill="url(#grad6)" stroke="#000" stroke-width="2"/></svg></div>
+    </div></span>ı</span>d</h1>
+
+    <div class="bottom-layout">
+        <div class="bio-text">
+            CREATIVE DIRECTOR AND DEVELOPER SPECIALIZING IN
+            MINIMALIST INTERFACES AND RETRO-TECH AESTHETICS.
+            CURRENTLY EXPLORING THE INTERSECTION OF CLASSICAL
+            LITERATURE AND DIGITAL DESIGN.
+        </div>
+        <div class="nav-container">
+            <a href="#" class="pill-btn">Works</a>
+            <a href="#" class="pill-btn">Info</a>
+            <a href="#" class="pill-btn">Labs</a>
+            <a href="#" class="pill-btn">Social</a>
+        </div>
+    </div>
+
+</body>
+</html>
