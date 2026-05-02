@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximilian Berndt | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #FF3E55;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            cursor: crosshair !important;
+        }
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            font-size: 13px;
+            padding: 40px;
+            min-height: 100vh;
+            transition: background-color 0.4s ease;
+            overflow-x: hidden;
+        }
+
+        /* Corner brackets */
+        .corner-bracket {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border-color: var(--text-color);
+            opacity: 0.2;
+            transition: border-color 0.3s ease, opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .corner-tl { top: 16px; left: 16px; border-left: 2px solid; border-top: 2px solid; }
+        .corner-tr { top: 16px; right: 16px; border-right: 2px solid; border-top: 2px solid; }
+        .corner-bl { bottom: 16px; left: 16px; border-left: 2px solid; border-bottom: 2px solid; }
+        .corner-br { bottom: 16px; right: 16px; border-right: 2px solid; border-bottom: 2px solid; }
+
+        /* Header Layout */
+        header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 120px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: -0.02em;
+            transition: color 0.3s ease;
+        }
+
+        .bio {
+            text-align: left;
+            transition: color 0.3s ease;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            margin-left: 20px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-label {
+            color: #888;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+        }
+
+        .section-list {
+            list-style: none;
+        }
+
+        .section-list li {
+            margin-bottom: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        /* Work items - interactive */
+        .work-item {
+            cursor: pointer;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .work-item:hover {
+            transform: translateX(8px);
+            color: var(--accent-color);
+        }
+
+        .work-item::before {
+            content: '→';
+            position: absolute;
+            left: -20px;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .work-item:hover::before {
+            opacity: 1;
+            left: -16px;
+        }
+
+        /* Skills & Clients - subtle hover */
+        .section-list:not(.work-list) li:hover {
+            opacity: 0.6;
+        }
+
+        /* Image Preview */
+        .image-preview {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9) rotate(-2deg);
+            z-index: 5;
+            pointer-events: none;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .image-preview.visible {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1) rotate(0deg);
+        }
+
+        .image-preview img {
+            width: 35vw;
+            max-width: 450px;
+            height: 40vh;
+            max-height: 350px;
+            object-fit: cover;
+            border: 3px solid var(--text-color);
+            box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-preview .project-name {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            opacity: 0.7;
+            transition: color 0.3s ease;
+        }
+
+        .image-preview .year {
+            position: absolute;
+            bottom: -40px;
+            right: 0;
+            font-size: 11px;
+            opacity: 0.5;
+        }
+
+        /* Status bar */
+        .status-bar {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.4;
+            transition: color 0.3s ease;
+            z-index: 10;
+        }
+
+        /* Hover color states */
+        body.vast { --bg-color: #2E19A7; --text-color: #ffffff; --accent-color: #FFD700; }
+        body.shopify { --bg-color: #95BF47; --text-color: #ffffff; --accent-color: #000000; }
+        body.oliver { --bg-color: #1a1a1a; --text-color: #ffffff; --accent-color: #FF3E55; }
+        body.bring { --bg-color: #D35C47; --text-color: #ffffff; --accent-color: #FFD700; }
+        body.liquidity { --bg-color: #0f172a; --text-color: #22d3ee; --accent-color: #ffffff; }
+        body.native { --bg-color: #63545A; --text-color: #ffffff; --accent-color: #FF6B6B; }
+        body.doity { --bg-color: #FF6B6B; --text-color: #ffffff; --accent-color: #000000; }
+        body.metamask { --bg-color: #E17726; --text-color: #ffffff; --accent-color: #000000; }
+        body.logo27b { --bg-color: #000000; --text-color: #ffffff; --accent-color: #FF3E55; }
+        body.tenthings { --bg-color: #D9C292; --text-color: #1a1a1a; --accent-color: #FF3E55; }
+        body.majesty { --bg-color: #1e3a5f; --text-color: #FFD700; --accent-color: #ffffff; }
+        body.newaesthetic { --bg-color: #FF006E; --text-color: #ffffff; --accent-color: #FFBE0B; }
+        body.enjoy { --bg-color: #3A86FF; --text-color: #ffffff; --accent-color: #FFBE0B; }
+        body.studio { --bg-color: #f5f5f5; --text-color: #1a1a1a; --accent-color: #FF3E55; }
+
+        /* Noise overlay */
+        .noise {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0.02;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { padding: 24px; }
+            header, .content-grid { display: block; }
+            header { margin-bottom: 60px; }
+            nav { text-align: left; margin-top: 20px; }
+            nav a { margin-left: 0; margin-right: 20px; }
+            .section-label { margin: 30px 0 10px; display: block; }
+            .section-list { margin-bottom: 30px; }
+            .image-preview img { width: 70vw; height: 30vh; }
+            .status-bar { display: none; }
+            .corner-bracket { width: 24px; height: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+
+    <!-- Corner brackets -->
+    <div class="corner-bracket corner-tl"></div>
+    <div class="corner-bracket corner-tr"></div>
+    <div class="corner-bracket corner-bl"></div>
+    <div class="corner-bracket corner-br"></div>
+
+    <header>
+        <div class="name">Maximilian Berndt</div>
+        <div class="bio">
+            Creative Developer<br>
+            based in Amsterdam, NL.
+        </div>
+        <nav>
+            <a href="#">Info</a>
+            <a href="#">Work</a>
+            <a href="#">Archive</a>
+        </nav>
+    </header>
+
+    <main class="content-grid">
+        <!-- Work Section -->
+        <div class="section-label">Work</div>
+        <ul class="section-list work-list">
+            <li><span class="work-item" data-project="vast">Vast</span></li>
+            <li><span class="work-item" data-project="shopify">Shopify Minis</span></li>
+            <li><span class="work-item" data-project="oliver">Oliver Bernotat</span></li>
+            <li><span class="work-item" data-project="bring">Bring her back</span></li>
+            <li><span class="work-item" data-project="liquidity">Liquidity</span></li>
+            <li><span class="work-item" data-project="native">Native Content</span></li>
+            <li><span class="work-item" data-project="doity">Doity</span></li>
+            <li><span class="work-item" data-project="metamask">Metamask</span></li>
+            <li><span class="work-item" data-project="logo27b">27b Logo</span></li>
+            <li><span class="work-item" data-project="tenthings">10 Things</span></li>
+            <li><span class="work-item" data-project="majesty">Your Majesty</span></li>
+            <li><span class="work-item" data-project="newaesthetic">New Aesthetic</span></li>
+            <li><span class="work-item" data-project="enjoy">Enjoy</span></li>
+            <li><span class="work-item" data-project="studio">Studio Lyon Szot</span></li>
+        </ul>
+        <div></div>
+
+        <!-- Skills Section -->
+        <div class="section-label">Skills</div>
+        <ul class="section-list">
+            <li>Web Development</li>
+            <li>Motion Design</li>
+            <li>UI & UX Design</li>
+            <li>Design Systems</li>
+            <li>Prototyping</li>
+            <li>WebGL</li>
+        </ul>
+        <div></div>
+
+        <!-- Clients Section -->
+        <div class="section-label">Clients</div>
+        <ul class="section-list">
+            <li>Adyen</li>
+            <li>A24</li>
+            <li>Netflix</li>
+            <li>Vast</li>
+            <li>Metamask</li>
+            <li>Telekom</li>
+            <li>PWC</li>
+            <li>Hansgrohe</li>
+            <li>Careve Medical</li>
+        </ul>
+        <div></div>
+    </main>
+
+    <!-- Image Preview -->
+    <div class="image-preview" id="imagePreview">
+        <img id="previewImg" src="" alt="Preview">
+        <div class="project-name" id="projectName">Project Name</div>
+        <div class="year" id="projectYear">2024</div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <span id="timeDisplay">00:00:00</span>
+        <span>Amsterdam, NL</span>
+        <span>Available for Work</span>
+    </div>
+
+    <script>
+        // Project data with images and years
+        const projectData = {
+            vast: {
+                image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Vast',
+                year: '2024'
+            },
+            shopify: {
+                image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Shopify Minis',
+                year: '2024'
+            },
+            oliver: {
+                image: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Oliver Bernotat',
+                year: '2023'
+            },
+            bring: {
+                image: 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Bring Her Back',
+                year: '2023'
+            },
+            liquidity: {
+                image: 'https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Liquidity',
+                year: '2023'
+            },
+            native: {
+                image: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Native Content',
+                year: '2023'
+            },
+            doity: {
+                image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Doity',
+                year: '2022'
+            },
+            metamask: {
+                image: 'https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Metamask',
+                year: '2022'
+            },
+            logo27b: {
+                image: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: '27b Logo',
+                year: '2022'
+            },
+            tenthings: {
+                image: 'https://images.pexels.com/photos/3889840/pexels-photo-3889840.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: '10 Things',
+                year: '2022'
+            },
+            majesty: {
+                image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Your Majesty',
+                year: '2021'
+            },
+            newaesthetic: {
+                image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'New Aesthetic',
+                year: '2021'
+            },
+            enjoy: {
+                image: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Enjoy',
+                year: '2021'
+            },
+            studio: {
+                image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
+                name: 'Studio Lyon Szot',
+                year: '2020'
+            }
+        };
+
+        // DOM elements
+        const imagePreview = document.getElementById('imagePreview');
+        const previewImg = document.getElementById('previewImg');
+        const projectName = document.getElementById('projectName');
+        const projectYear = document.getElementById('projectYear');
+        const timeDisplay = document.getElementById('timeDisplay');
+        const workItems = document.querySelectorAll('.work-item');
+
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            timeDisplay.textContent = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+        
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Work item hover events
+        workItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const project = item.dataset.project;
+                const data = projectData[project];
+                
+                if (data) {
+                    // Add class to body for color change
+                    document.body.className = project;
+                    
+                    // Show image preview
+                    previewImg.src = data.image;
+                    projectName.textContent = data.name;
+                    projectYear.textContent = data.year;
+                    imagePreview.classList.add('visible');
+                }
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                // Reset body class
+                document.body.className = '';
+                
+                // Hide image preview
+                imagePreview.classList.remove('visible');
+            });
+        });
+    </script>
+</body>
+</html>
