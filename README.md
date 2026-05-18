@@ -105,16 +105,21 @@ I'm a self-taught developer with a passion for front-end development and creatin
 
 ## 📚 Currently Reading
 
-- [Bartleby the Scrivener](https://www.goodreads.com/review/show/8549810583) by Herman Melville ⭐ 3.91
-- [বলাকা](https://www.goodreads.com/review/show/8535859623) by Rabindranath Tagore ⭐ 3.77
-- [কোলকাতা কেন্দ্রিক বুদ্ধিজীবী](https://www.goodreads.com/review/show/8395778347) by M.R. Akhtar Mukul ⭐ 4.0
-- [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142) by Yolanda Olson ⭐ 2.78
-- [The Iliad](https://www.goodreads.com/review/show/7680664926) by Homer ⭐ 3.9
-- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773) by Bibhutibhushan Bandyopadhyay ⭐ 4.19
-- [The Plague](https://www.goodreads.com/review/show/7522680402) by Albert Camus ⭐ 4.05
-- [The Broken Wings](https://www.goodreads.com/review/show/7439842339) by Kahlil Gibran ⭐ 4.11
-- [The Judge's House](https://www.goodreads.com/review/show/7436633144) by Bram Stoker ⭐ 3.8
-- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970) by Marcel Proust ⭐ 4.35
+> *"A reader lives a thousand lives before he dies." — George R.R. Martin*
+
+| Book | Author | Rating |
+|---|---|---|
+| 📖 Bartleby the Scrivener | Herman Melville | ⭐ 3.91 |
+| 📖 বলাকা | Rabindranath Tagore | ⭐ 3.77 |
+| 📖 কোলকাতা কেন্দ্রিক বুদ্ধিজীবী | M.R. Akhtar Mukul | ⭐ 4.0 |
+| 📖 8 Days For Salvation | Yolanda Olson | ⭐ 2.78 |
+| 📖 The Iliad | Homer | ⭐ 3.9 |
+| 📖 বনে-পাহাড়ে | Bibhutibhushan Bandyopadhyay | ⭐ 4.19 |
+| 📖 The Plague | Albert Camus | ⭐ 4.05 |
+| 📖 The Broken Wings | Kahlil Gibran | ⭐ 4.11 |
+| 📖 The Judge's House | Bram Stoker | ⭐ 3.8 |
+| 📖 In Search of Lost Time | Marcel Proust | ⭐ 4.35 |
+
 
 ---
 
