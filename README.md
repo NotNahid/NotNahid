@@ -1,14 +1,19 @@
 <p align="center">
   <a href="https://github.com/Akshay090/svg-banners">
-    <img src="https://svg-banners.vercel.app/api?type=rainbow&text1=Nahid&text2=Web%20Developer&width=800&height=400" alt="Banner">
+    <img src="https://svg-banners.vercel.app/api?type=rainbow&text1=NotNahid&text2=Web%20Developer&width=800&height=400" alt="Banner">
   </a>
 </p>
+
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Nahid;I'm+a+passionate+front-end+developer;I'm+always+learning+new+technologies;Welcome+to+my+profile!" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Nahid;I'm+a+passionate+front-end+developer;I'm+always+learning+new+technologies;Welcome+to+my+profile!" alt="Typing SVG" />
+  </a>
 </p>
+
 <p align="center">
-  <em>A passionate developer from Bangladesh, interested in creating beautiful and engaging user experiences. I'm always learning and exploring new technologies.</em>
+  <em>A passionate developer from Bangladesh 🇧🇩, building beautiful and engaging user experiences.<br>Currently crafting a vintage book discovery app with React + Firebase.</em>
 </p>
+
 <p align="center">
   <a href="https://www.facebook.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
   <a href="https://x.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
@@ -18,115 +23,134 @@
   <a href="https://www.goodreads.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Goodreads-33332D?style=for-the-badge&logo=goodreads&logoColor=white" alt="Goodreads"></a>
 </p>
 
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3&section=header" width="100%">
 
-## 🚀 𝙰𝚋𝚘𝚞𝚝 𝙼𝚎
+---
+
+## 🚀 About Me
+
 I'm a self-taught developer with a passion for front-end development and creating intuitive, user-friendly interfaces. I'm currently diving deeper into the React ecosystem and exploring the world of full-stack development. My goal is to leverage my skills to build meaningful and impactful web applications.
 
 - 🌐 Visit my website: [nahid.rf.gd](http://nahid.rf.gd/)
-- 📫 How to reach me: [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com)
-- ⏰ My Timezone: `(GMT+6:00) Bangladesh Standard Time`
+- 📫 Reach me at: [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com)
+- ⏰ Timezone: `GMT+6:00 — Bangladesh Standard Time`
+- 🔨 Currently building: **Vintage Book App** — a book discovery platform
 
-## 🛠️ 𝙼𝚢 𝚂𝚔𝚒𝚕𝚕𝚜
+---
+
+## 🛠️ My Skills
+
 <p align="center">
-  <b>Languages</b>
-  <br>
+  <b>Languages</b><br>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <br><br>
-  <b>Frameworks & Libraries</b>
-  <br>
+  <b>Frameworks & Libraries</b><br>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
   <br><br>
-  <b>Tools & Platforms</b>
-  <br>
+  <b>Tools & Platforms</b><br>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
 </p>
 
-## 🌱 𝙸'𝚖 𝙲𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐
-- 💻 Next.js
-- 🎨 Tailwind CSS
-- ☁️ Firebase
+---
 
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
+## 🌱 Currently Learning
 
-## 📊 𝙼𝚢 𝙶𝚒𝚝𝙷𝚞𝚋 𝚂𝚝𝚊𝚝𝚜 & 𝙰𝚌𝚝𝚒𝚟𝚒𝚝𝚢
+| Technology | Progress |
+|---|---|
+| ⚡ Next.js | ![60%](https://progress-bar.xyz/60/?title=Next.js&width=200&color=646CFF) |
+| 🎨 Tailwind CSS | ![75%](https://progress-bar.xyz/75/?title=Tailwind&width=200&color=06B6D4) |
+| ☁️ Firebase | ![45%](https://progress-bar.xyz/45/?title=Firebase&width=200&color=FFCA28) |
+
+---
+
+## 📊 GitHub Stats & Activity
+
 <p align="center">
-  <img src="https://metrics.lecoq.io/NotNahid?template=classic&base.indepth=true&base.hireable=false&base.skip=false&languages.limit=8&languages.threshold=0%&languages.other=true&languages.colors=github&languages.sections=most-used&languages.indepth=true&languages.analysis.timeout=15&languages.analysis.timeout.repositories=7.5&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14" alt="GitHub Metrics" />
+  <img src="https://github-readme-stats.vercel.app/api?username=NotNahid&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="165">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NotNahid&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="165">
 </p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NotNahid&theme=radical&hide_border=true" alt="GitHub Streak">
+</p>
+
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=NotNahid&theme=github-compact" alt="Activity Graph">
 </p>
-<p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph">
-</p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NotNahid/NotNahid/output/dist/github-snake-dark.svg">
     <img alt="github-snake" src="https://raw.githubusercontent.com/NotNahid/NotNahid/output/dist/github-snake.svg">
   </picture>
 </p>
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=NotNahid&theme=radical&column=7" alt="GitHub Trophies" />
-</p>
 
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
+---
 
-## 📂 𝙼𝚢 𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜 & 𝚁𝚎𝚊𝚍𝚒𝚗𝚐
+## 📂 My Projects
+
 <p align="center">
   <a href="https://github.com/NotNahid/vintage-book-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=NotNahid&repo=vintage-book-app&theme=radical" alt="Vintage Book App" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=NotNahid&repo=vintage-book-app&theme=radical&hide_border=true" alt="Vintage Book App" />
   </a>
 </p>
 
-### 📚 Currently Reading
-<table>
-<!-- GOODREADS-LIST:START -->
-- [Bartleby the Scrivener](https://www.goodreads.com/review/show/8549810583?utm_medium=api&utm_source=rss) by Herman Melville (⭐️3.91)
-- [বলাকা](https://www.goodreads.com/review/show/8535859623?utm_medium=api&utm_source=rss) by Rabindranath Tagore (⭐️3.77)
-- [কোলকাতা কেন্দ্রিক বুদ্ধিজীবী](https://www.goodreads.com/review/show/8395778347?utm_medium=api&utm_source=rss) by M.R. Akhtar Mukul (⭐️4)
-- [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142?utm_medium=api&utm_source=rss) by Yolanda Olson (⭐️2.78)
-- [The Illiad](https://www.goodreads.com/review/show/7680664926?utm_medium=api&utm_source=rss) by Homer (⭐️3.9)
-- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773?utm_medium=api&utm_source=rss) by Bibhutibhushan Bandyopadhyay (⭐️4.19)
-- [The Plague](https://www.goodreads.com/review/show/7522680402?utm_medium=api&utm_source=rss) by Albert Camus (⭐️4.05)
-- [The Broken Wings](https://www.goodreads.com/review/show/7439842339?utm_medium=api&utm_source=rss) by Kahlil Gibran (⭐️4.11)
-- [The Judge&apos;s House](https://www.goodreads.com/review/show/7436633144?utm_medium=api&utm_source=rss) by Bram Stoker (⭐️3.8)
-- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970?utm_medium=api&utm_source=rss) by Marcel Proust (⭐️4.35)
-<!-- GOODREADS-LIST:END -->
-</table>
+---
 
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
+## 📚 Currently Reading
 
-## 🎢 𝙵𝚞𝚗 & 𝙸𝚗𝚝𝚎𝚛𝚊𝚌𝚝𝚒𝚟𝚎
+- [Bartleby the Scrivener](https://www.goodreads.com/review/show/8549810583) by Herman Melville ⭐ 3.91
+- [বলাকা](https://www.goodreads.com/review/show/8535859623) by Rabindranath Tagore ⭐ 3.77
+- [কোলকাতা কেন্দ্রিক বুদ্ধিজীবী](https://www.goodreads.com/review/show/8395778347) by M.R. Akhtar Mukul ⭐ 4.0
+- [8 Days For Salvation](https://www.goodreads.com/review/show/8109451142) by Yolanda Olson ⭐ 2.78
+- [The Iliad](https://www.goodreads.com/review/show/7680664926) by Homer ⭐ 3.9
+- [বনে-পাহাড়ে](https://www.goodreads.com/review/show/7573049773) by Bibhutibhushan Bandyopadhyay ⭐ 4.19
+- [The Plague](https://www.goodreads.com/review/show/7522680402) by Albert Camus ⭐ 4.05
+- [The Broken Wings](https://www.goodreads.com/review/show/7439842339) by Kahlil Gibran ⭐ 4.11
+- [The Judge's House](https://www.goodreads.com/review/show/7436633144) by Bram Stoker ⭐ 3.8
+- [In Search of Lost Time](https://www.goodreads.com/review/show/7430874970) by Marcel Proust ⭐ 4.35
 
+---
 
+## 🎢 Fun Corner
 
-
-
-
-### 🤓 Daily Random Fact
-<!-- DAILY-FACT-START -->
-<!-- DAILY-FACT-END -->
-
+<!-- Joke Card -->
 <p align="center">
-  <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card"/>
+  <img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder" alt="Jokes Card"/>
 </p>
 
-
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojRjcwMDAwO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRjhDMDA7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1IiBmaWxsPSJ1cmwoI2dyYWRpZW50KSIgLz4KPC9zdmc+">
-
+<!-- Random Dev Quote -->
 <p align="center">
-  <img src="https://vbr.nathanchung.dev/badge?page_id=NotNahid.PROFILE_README.md" alt="visitors">
-</p>
-<!-- Thanks for checking out my code! Hope you have a great day. -->
-### 📜 Daily Inspiration
-<p align="center">
-  <img src="https://github-readme-quotes-bay.vercel.app/quote?theme=radical&animation=grow_out_in" alt="Random Quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
 </p>
 
-![My User Statistics](images/userstats.svg)
+---
+
+## 📬 Let's Connect!
+
+<p align="center">
+  <a href="mailto:nahidul.live@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  </a>
+  <a href="https://nahid.rf.gd/">
+    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="https://www.goodreads.com/notnahid">
+    <img src="https://img.shields.io/badge/Goodreads-33332D?style=for-the-badge&logo=goodreads&logoColor=white" alt="Goodreads">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://vbr.nathanchung.dev/badge?page_id=NotNahid.PROFILE_README.md&color=red&style=flat-square&logo=github" alt="Profile Views">
+</p>
+
+<!-- Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%">
+
+<!-- Thanks for visiting! Have a great day 😊 -->
