@@ -14,6 +14,7 @@
   <em>A passionate developer from Bangladesh 🇧🇩, building beautiful and engaging user experiences.<br>Currently crafting a vintage book discovery app with React + Firebase.</em>
 </p>
 
+<!-- Social Badges -->
 <p align="center">
   <a href="https://www.facebook.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
   <a href="https://x.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
@@ -23,7 +24,13 @@
   <a href="https://www.goodreads.com/notnahid" target="_blank"><img src="https://img.shields.io/badge/Goodreads-33332D?style=for-the-badge&logo=goodreads&logoColor=white" alt="Goodreads"></a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3&section=header" width="100%">
+<!-- Quick Info Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20To%20Work-brightgreen?style=flat-square&logo=github" alt="Open to Work">
+  <img src="https://img.shields.io/badge/Ask%20Me%20About-React%20%7C%20JS%20%7C%20CSS-blue?style=flat-square" alt="Ask me about">
+  <img src="https://img.shields.io/badge/Loves-Books%20%26%20Code-red?style=flat-square" alt="Loves">
+  <img src="https://img.shields.io/badge/Based%20In-Bangladesh%20%F0%9F%87%A7%F0%9F%87%A9-green?style=flat-square" alt="Location">
+</p>
 
 ---
 
@@ -31,32 +38,25 @@
 
 I'm a self-taught developer with a passion for front-end development and creating intuitive, user-friendly interfaces. I'm currently diving deeper into the React ecosystem and exploring the world of full-stack development. My goal is to leverage my skills to build meaningful and impactful web applications.
 
-- 🌐 Visit my website: [nahid.rf.gd](http://nahid.rf.gd/)
-- 📫 Reach me at: [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com)
-- ⏰ Timezone: `GMT+6:00 — Bangladesh Standard Time`
-- 🔨 Currently building: **Vintage Book App** — a book discovery platform
+| | |
+|---|---|
+| 🌐 **Website** | [nahid.rf.gd](http://nahid.rf.gd/) |
+| 📫 **Email** | [nahidul.live@gmail.com](mailto:nahidul.live@gmail.com) |
+| ⏰ **Timezone** | GMT+6:00 — Bangladesh Standard Time |
+| 🔨 **Building** | Vintage Book App — a book discovery platform |
+| 💬 **Ask me about** | React, JavaScript, CSS, HTML |
+| ⚡ **Fun fact** | I read classic literature while debugging code |
 
 ---
 
-## 🛠️ My Skills
+## 🛠️ Tech Stack
 
+<!-- Skillicons — animated beautiful icons, no Actions needed -->
 <p align="center">
-  <b>Languages</b><br>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <br><br>
-  <b>Frameworks & Libraries</b><br>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
-  <br><br>
-  <b>Tools & Platforms</b><br>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,vite,nextjs,tailwind,firebase,git,github,vscode&theme=dark&perline=6" alt="Skills" />
+  </a>
 </p>
-
 ---
 
 ## 🌱 Currently Learning
