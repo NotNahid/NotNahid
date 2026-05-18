@@ -93,14 +93,22 @@ I'm a self-taught developer with a passion for front-end development and creatin
 
 ---
 
-## 📂 My Projects
+## 📂 Featured Projects
 
 <p align="center">
   <a href="https://github.com/NotNahid/vintage-book-app">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=NotNahid&repo=vintage-book-app&theme=radical&hide_border=true" alt="Vintage Book App" />
+    <img src="https://img.shields.io/badge/📚_Vintage_Book_App-A_book_discovery_platform-F70000?style=for-the-badge&logo=github&logoColor=white" alt="Vintage Book App">
   </a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/stars/NotNahid/vintage-book-app?style=flat-square&logo=github&label=Stars&color=F70000" alt="Stars">
+  <img src="https://img.shields.io/github/forks/NotNahid/vintage-book-app?style=flat-square&logo=github&label=Forks&color=646CFF" alt="Forks">
+  <img src="https://img.shields.io/github/last-commit/NotNahid/vintage-book-app?style=flat-square&logo=github&label=Last+Commit&color=brightgreen" alt="Last Commit">
+  <img src="https://img.shields.io/github/languages/top/NotNahid/vintage-book-app?style=flat-square&color=F7DF1E" alt="Top Language">
+</p>
+
+> 💡 *Explore all my work on my [GitHub repositories](https://github.com/NotNahid?tab=repositories)*
 ---
 
 ## 📚 Currently Reading
