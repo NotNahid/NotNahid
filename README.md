@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <em>A passionate developer from Bangladesh 🇧🇩, building beautiful and engaging user experiences.<br>Currently crafting a vintage book discovery app with React + Firebase.</em>
+  <em>A passionate developer from Bangladesh 🇧🇩, who says "I love learning, creating & sharing, so I do it :)".</em>
 </p>
 
 <!-- Social Badges -->
