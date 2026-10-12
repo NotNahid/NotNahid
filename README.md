@@ -34,7 +34,7 @@
 
 ---
 
-## 🚀 About Me
+## About Me
 
 I'm a self-taught developer with a passion for front-end development and creating intuitive, user-friendly interfaces. I'm currently diving deeper into the React ecosystem and exploring the world of full-stack development. My goal is to leverage my skills to build meaningful and impactful web applications.
 
